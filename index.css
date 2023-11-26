@@ -5,30 +5,35 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
 
 #vanta {
-  z-index:-1;
+  z-index: -1;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  
 }
 
+/*Top half of site*/
+
 main {
-  position:relative;
-  
+  position: relative;
 }
 
 body {
-  background-color:transparent ;
+  background-color: transparent;
   margin-left: 300px;
   margin-right: 300px;
-
 }
+
+/* .logo {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600px;
+} */
 
 header {
   margin-top: 3em;
@@ -40,37 +45,41 @@ header {
 header > img {
   width: 9em;
   height: 9em;
-  border-radius: 10%;
-  border: 2px solid white;
+  border-radius: 100%;
+  border: 2px solid black;
   backdrop-filter: blur(10px);
+  filter: drop-shadow(0px 10px 10px black);
 }
 
 header > h1 {
+  position: absolute;
   display: inline-block;
+  text-decoration: underline;
+  top: 0px;
+  left: 0px;
   font-size: 2em;
+  font-family: copperplate;
   font-weight: bolder;
   padding: 0.3em 1.2em;
+  background-color: transparent;
   background-color: black(123, 39, 192, 0.637);
-  color: white;
-  border-radius: 1em;
-  border: 2px solid white;
-  backdrop-filter: blur(10px) saturate(160%) contrast(100%);
-  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  /* backdrop-filter: blur(10px) saturate(160%) contrast(100%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%); */
   margin-left: auto;
   margin-right: auto;
 }
 
 p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bolder;
 }
 header > p {
-color: white;
-display: inline-block;
+  color: white;
+  display: inline-block;
   font-size: 1.2em;
   font-weight: bolder;
   padding: 0.3em 1.2em;
-  background-color:transparent;
+  background-color: transparent;
   backdrop-filter: blur(10px) saturate(160%) contrast(100%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   margin-left: 200px;
@@ -82,6 +91,9 @@ display: inline-block;
   background-color: transparent;
   border: none;
   margin-top: -100px;
+  max-width: 30px;
+  margin-bottom: -100px;
+  /* filter: drop-shadow(0px 5px 10px white); */
 }
 
 header > li {
@@ -90,9 +102,11 @@ header > li {
   margin: 0 auto;
 }
 
+/* Bottom half of website */
+
 ul {
   list-style: none;
-  padding: 2em;
+  padding: 0.3em;
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 400px;
@@ -120,3 +134,94 @@ a {
   color: white;
   text-decoration: none;
 }
+
+ul > .btn {
+  background-color: #f1667daf;
+  /* padding: 0.3em 8em; */
+  border-radius: 20px;
+  border: 1px solid white;
+  margin: 1.2em 0;
+  text-align: center;
+}
+
+/* .btn {
+  width: 300px;
+  height: 50px;
+  transition: ease-out 1s;
+}
+
+.btn:hover {
+box-shadow: inset 300px 0 0 0 blueviolet;
+color: #f1667daf;
+cursor: pointer;
+} */
+
+.fadelist {
+  transition: ease-out 0.55s;
+  /* box-shadow: 0 0 5px white; */
+}
+
+/* .blkicon {
+ filter: brightness(0) invert(1);
+
+} */
+
+.fadelist:hover {
+  box-shadow: inset 500px 0 0 0 #17052b;
+  color: #f1667daf;
+  cursor: pointer;
+  opacity: 0.9;
+  /* box-shadow: 0 0 5px white,
+  0 0 25px white, 0 0 50px white,
+  0 0 100px white, 0 0 200px white; */
+}
+
+ul > .btn > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+/* about.html css tags */
+h2 {
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.text {
+  display: flex;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: center;
+  margin-right: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #000a;
+  background: none;
+  backdrop-filter: blur(5px) saturate(160%) contrast(100%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+@media only screen and (max-width: 400px) {
+  html {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper;
